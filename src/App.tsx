@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "./App.css";
-import { moneyMask } from "./utils/masks/moneyMask";
+import { cpfMask } from "./utils/masks/cpfMask";
 
 function App() {
   const [value, setValue] = useState("");
@@ -9,7 +9,7 @@ function App() {
     <>
       <input
         type="text"
-        value={moneyMask(value)}
+        value={cpfMask(value)}
         onChange={(e) => setValue(e.target.value)}
       />
     </>
